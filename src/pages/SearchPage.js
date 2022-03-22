@@ -1,4 +1,4 @@
-import response from "../components/response";
+
 import { useStateValue } from "../components/StateProvider";
 import useGoogle from "../components/useGoogle";
 import "./SearchPage.css";
@@ -11,7 +11,7 @@ import { Avatar } from "@material-ui/core";
 
 const SearchPage = () => {
     
-    const [{term},dispatch] = useStateValue();
+    const [{term}] = useStateValue();
 
     //const data = response;
     const {data} = useGoogle(term);
@@ -24,7 +24,7 @@ const SearchPage = () => {
                 <Link to="">
                     <img className="header_logo"
                      src='https://png2.cleanpng.com/sh/ebc4ae0e67202242909c0a6dabdb6246/L0KzQYm3VsIzN5hqjJH0aYP2gLBuTfdwd5hxfZ91b3fyPbj2jBdtbaFxfeo2Z3Byd73sTgNmaaNogJ8AYkLmdIjthMY3aWoASpC6NEW6RIO8VME2Omo7TqcAM0O3QoG8TwBvbz==/kisspng-google-logo-googleplex-google-search-5b2cd7fd66a992.1457425415296655334205.png'
-                    />   
+                     alt="google-logo" />   
                 </Link>
                 <div className="header_body">
                   <Search hideButtons/>
@@ -84,13 +84,13 @@ const SearchPage = () => {
                            <div className="search_result">
 
                                <div className="search_result_link">
-                                    <a href={item.link} target="_blank">
+                                    <a href={item.link} target="_blank" rel="noreferrer">
                                         {item.displayLink} <MoreVertOutlined />
                                     </a>
                                </div>
 
                                <div className="search_result_title">
-                                    <a href={item.link} target="_blank">
+                                    <a href={item.link} target="_blank" rel="noreferrer">
                                         <h2>{item.title}</h2>
                                     </a>
                                </div>
