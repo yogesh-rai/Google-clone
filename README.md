@@ -1,3 +1,27 @@
+# Google Clone
+
+- Google clone using Reactjs.
+- Used material-ui, css and flexbox for styling.
+- Used react-hooks, router, context-api.
+- Fetching search results from google-custom-search api.
+- Deployed on web using Firebase.
+
+#### Tech Stack : Reactjs, CSS, Material-Ui, VS Code.
+
+#### Live preview of the site :- 
+
+https://search-clone-1647622869324.web.app
+
+Screenshots :- 
+
+![React App (1)](https://user-images.githubusercontent.com/69380654/159720846-ee8a785f-51cf-49b8-b344-1337cb9044f3.png)
+![React App (2)](https://user-images.githubusercontent.com/69380654/159720919-4c0b6566-53fb-481f-8b04-bef5def18d76.png)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
