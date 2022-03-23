@@ -58,5 +58,7 @@
 
 .home_body > img{
     object-fit: contain;
-    height: 200px;
+    margin-top: 3.5rem;
+    height: 90px;
+    margin-bottom: 3rem;
 } 
